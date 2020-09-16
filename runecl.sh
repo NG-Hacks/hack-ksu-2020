@@ -1,0 +1,1 @@
+eclplus server=40.76.26.67:8010 cluster=thor ecl=@main.ecl
