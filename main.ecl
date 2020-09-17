@@ -1,9 +1,10 @@
 IMPORT std;
 IMPORT getCovidDS;
-IMPORT getFlightsDS;
 
-result := '1';
+result := SORT(
+        getCovidDS.covid_DS, update_date
+        );
 
 OUTPUT(
-    result,
-    NAMED('test'));
+    CHOOSEN(result, 100),
+    NAMED('country_codes'));
