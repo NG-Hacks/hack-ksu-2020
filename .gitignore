@@ -1,3 +1,5 @@
 .vscode
 .eclcc
 settings.json
+data
+eclcc.log
