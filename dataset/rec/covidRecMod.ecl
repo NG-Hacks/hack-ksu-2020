@@ -5,7 +5,7 @@ EXPORT covidRecMod := MODULE
     EXPORT covidRec := RECORD
       	VARSTRING		fips;
       	VARSTRING		admin;
-      	VARSTRING 	state;
+      	VARSTRING 		state;
       	VARSTRING		country;
       	INTEGER			update_date;
       	UNSIGNED		geo_lat;

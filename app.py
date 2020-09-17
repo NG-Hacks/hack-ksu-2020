@@ -11,5 +11,4 @@ pw = settings["password"]
 cluster = settings["cluster"]
 target = settings["target"]
 
-res = os.system(f'ecl run {cluster} -s {target} -u {user} -pw {pw} main.ecl')
-print(res)
+os.system(f'ecl run {cluster} -s {target} -u {user} -pw {pw} main.ecl')
