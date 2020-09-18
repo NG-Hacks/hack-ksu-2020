@@ -5,9 +5,9 @@ IMPORT resultRecMod FROM funcs.rec;
 
 EXPORT resultMod := MODULE
     EXPORT resultRecMod.resultRec effectiveFlights(
-		STRING country_name,
-		UNSIGNED4 min_date,
-		UNSIGNED4 max_date) := FUNCTION
+		STRING country_name='United States of America',
+		UNSIGNED4 min_date=20200401,
+		UNSIGNED4 max_date=20200430) := FUNCTION
 
         country_code := getCodes.codes(name=country_name)[1].alpha_2;
         effective_flights := effectiveFlightsMod.effectiveFlights(

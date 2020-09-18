@@ -7,7 +7,7 @@ EXPORT covidCasesMod := MODULE
 	UNSIGNED4 difference (UNSIGNED4 a, UNSIGNED4 b) := FUNCTION
 		// if either of the numbers is zero, return zero.
 		// else, return the difference
-		RETURN IF((a=b AND a=0), 0, a-b);
+		RETURN IF((a=0 OR b=0), 0, a-b);
 	END;
     	
     EXPORT casesRecMod.casesRec covidCases (

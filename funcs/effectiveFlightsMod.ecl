@@ -4,7 +4,7 @@ IMPORT numFlightsRecMod FROM funcs.rec;
 
 EXPORT effectiveFlightsMod := MODULE
 	EXPORT numFlightsRecMod.numFlightsRec effectiveFlights (
-		STRING country_name,
+		STRING country_name='United States of America',
 		STRING country_code,
 		UNSIGNED4 min_date,
 		UNSIGNED4 max_date) := FUNCTION
