@@ -1,5 +1,3 @@
-# ksu-hackathon-2020
-
 ![APEX ENGINEERING](img/logo.png "logo")
 
 # Purpose
