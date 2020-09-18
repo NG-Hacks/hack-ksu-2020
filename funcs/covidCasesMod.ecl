@@ -1,5 +1,5 @@
 IMPORT std;
-IMPORT getCodes, getCovidDS FROM dataset;
+IMPORT getCovidDS FROM dataset;
 IMPORT casesRecMod FROM funcs.rec;
 
 EXPORT covidCasesMod := MODULE
@@ -12,10 +12,9 @@ EXPORT covidCasesMod := MODULE
     	
     EXPORT casesRecMod.casesRec covidCases (
 		STRING country_name,
+		STRING country_code,
 		UNSIGNED4 min_date,
 		UNSIGNED4 max_date) := FUNCTION
-
-		country_code := getCodes.codes(name=country_name)[1].alpha_2;
 
 		// US is listed in covid dataset as US instead of United States of America
 		covidSubset := getCovidDS.covid_DS(

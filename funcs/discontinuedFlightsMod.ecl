@@ -1,14 +1,13 @@
 IMPORT std;
-IMPORT getCodes, getCovidDS, getFlightsDS FROM dataset;
+IMPORT getCovidDS, getFlightsDS FROM dataset;
 IMPORT numFlightsRecMod FROM funcs.rec;
 
 EXPORT discontinuedFlightsMod := MODULE
 	EXPORT numFlightsRecMod.numFlightsRec discontinuedFlights (
 		STRING country_name,
+		STRING country_code,
 		UNSIGNED4 min_date,
 		UNSIGNED4 max_date) := FUNCTION
-
-		country_code := getCodes.codes(name=country_name)[1].alpha_2;
 
 		// split data into subsets for easier processing
 		flights2019Subset := getFlightsDS.flights2019_DS(

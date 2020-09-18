@@ -11,9 +11,9 @@ EXPORT resultMod := MODULE
 
         country_code := getCodes.codes(name=country_name)[1].alpha_2;
         effective_flights := effectiveFlightsMod.effectiveFlights(
-            country_name, min_date, max_date);
+            country_name, country_code, min_date, max_date);
         covid_cases := covidCasesMod.covidCases(
-            country_name, min_date, max_date);
+            country_name, country_code, min_date, max_date);
 
         res := DATASET(
             [{
@@ -41,9 +41,9 @@ EXPORT resultMod := MODULE
 
         country_code := getCodes.codes(name=country_name)[1].alpha_2;
         discontinued_flights := discontinuedFlightsMod.discontinuedFlights(
-            country_name, min_date, max_date);
+            country_name, country_code, min_date, max_date);
         covid_cases := covidCasesMod.covidCases(
-            country_name, min_date, max_date);
+            country_name, country_code, min_date, max_date);
 
         res := DATASET(
             [{
