@@ -12,8 +12,8 @@ EXPORT covidCasesMod := MODULE
     	
     EXPORT casesRecMod.casesRec covidCases (
 		STRING country_name,
-		STRING min_date,
-		STRING max_date) := FUNCTION
+		UNSIGNED4 min_date,
+		UNSIGNED4 max_date) := FUNCTION
 
 		country_code := getCodes.codes(name=country_name)[1].alpha_2;
 
