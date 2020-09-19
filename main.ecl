@@ -130,10 +130,62 @@ t18 := resultMod.effectiveFlights(
         getDates.dates[18].start_date,
         getDates.dates[18].end_date)[1];
 
+t19 := resultMod.effectiveFlights(
+        country,
+        getDates.dates[19].start_date,
+        getDates.dates[19].end_date)[1];
+
+t20 := resultMod.effectiveFlights(
+        country,
+        getDates.dates[20].start_date,
+        getDates.dates[20].end_date)[1];
+
+t21 := resultMod.effectiveFlights(
+        country,
+        getDates.dates[21].start_date,
+        getDates.dates[21].end_date)[1];
+
+t22 := resultMod.effectiveFlights(
+        country,
+        getDates.dates[22].start_date,
+        getDates.dates[22].end_date)[1];
+
+t23 := resultMod.effectiveFlights(
+        country,
+        getDates.dates[23].start_date,
+        getDates.dates[23].end_date)[1];
+
+t24 := resultMod.effectiveFlights(
+        country,
+        getDates.dates[24].start_date,
+        getDates.dates[24].end_date)[1];
+
+t25 := resultMod.effectiveFlights(
+        country,
+        getDates.dates[25].start_date,
+        getDates.dates[25].end_date)[1];
+
+t26 := resultMod.effectiveFlights(
+        country,
+        getDates.dates[26].start_date,
+        getDates.dates[26].end_date)[1];
+
+t27 := resultMod.effectiveFlights(
+        country,
+        getDates.dates[27].start_date,
+        getDates.dates[27].end_date)[1];
+
+t28 := resultMod.effectiveFlights(
+        country,
+        getDates.dates[28].start_date,
+        getDates.dates[28].end_date)[1];
+                                                          
 tb := DATASET([
     {t1}, {t2}, {t3}, {t4}, {t5}, {t6}, 
     {t7}, {t8}, {t9}, {t10}, {t11}, {t12},
-    {t13}, {t14}, {t15}, {t16}, {t17}, {t18}], myrec);
+    {t13}, {t14}, {t15}, {t16}, {t17}, {t18},
+    {t19}, {t20}, {t21}, {t22}, {t23}, {t24},
+    {t25}, {t26}, {t27}, {t28} ], myrec);
 
 OUTPUT(
     tb,
